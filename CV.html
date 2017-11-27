@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+<html class="cv-preview">
+<head>
+    <meta charset="UTF-8">
+    <META NAME="ROBOTS" CONTENT="noindex,nofollow">
+    <title>禹康的个人简历</title>
+    <!--<link href="https://cdn.bootcss.com/cropper/3.0.0-beta/cropper.min.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="http://static.500d.me/resources/500d/css/layer.css" />-->
+    <link rel="stylesheet" href="http://static.500d.me/resources/500d/editresume/css/base.css?v=5041" />
+    <link rel="stylesheet" href="http://static.500d.me/resources/500d/cvresume/css/common.css?v=5041" />
+    <!--<script src="http://static.500d.me/resources/500d/js/jquery.min.js"></script>-->
+    <!--<script src="http://static.500d.me/resources/500d/editresume/jquery-ui.min.js"></script>-->
+    <!--<script src="http://static.500d.me/resources/500d/editresume/cropper.min.js"></script>-->
+    <!--<script src="http://static.500d.me/resources/500d/js/bootstrap.min.js"></script>-->
+    <!--<script type="text/javascript" src="http://static.500d.me/resources/500d/js/common_ext.js?v=6011"></script>-->
+    <!--<script src="http://static.500d.me/resources/500d/js/layer.js"></script>-->
+    <!--<script src="http://static.500d.me/resources/500d/cvresume/js/jquery.s2t.js"></script>-->
+    <!--<script type="text/javascript" src="http://static.500d.me/resources/500d/cvresume/js/resume.js?v=5041"></script>-->
+    <link rel="stylesheet" href="css/CV.css" />
+    <!--<script src="http://static.500d.me/resources/500d/js/utils.js?v=5041" type="text/javascript"></script>-->
+</head>
+<body class="cv-preview">
+<!--预览头部-->
+<div class="preview-header">
+    <div class="logo"><a href= "/editresume/"><img src="http://static.500d.me/resources/500d/cvresume/images/logo.jpg"/></a></div>
+    <div class="download"><a class="a-button " data_auth="download" href="javascript:;" id="releaseDownloadPDFBtn" data_visitid="4150704205"  data_id="2668742"><i class="icon">1</i>下载</a></div>
+</div>
+<!--模态框写这里-->
+<div class="wbdCv-modals">
+    <!--分享简历-->
+    <div class="modal fade smallmodal" id="shareResume-modal">
+        <div class="modal-dialog">
+            <div class="modal-content share-content show-swal2">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <span class="modal-title" >分享简历</span>
+                </div>
+                <div class="modal-body">
+                    <span class="shareTips">将链接通过QQ、微信等任何方式发给相关人等，</span>
+                    <span class="shareTips">对方即可查看简历</span>
+                    <div class="shareContent">
+                        <span>http://www.500d.me/cvresume/</span>
+                        <input class="" data_auth="set_domain" type="text" id="visitid" value="4150704205">
+                        <a href="javascript:;" class="shareUrl" id="copyUrl">复制链接</a>
+                    </div>
+                </div><div class="modal-footer"><span class="shareTips">注意：请确认本简历的访问权限为「所有人」或「密码访问」， </span><span class="shareTips">否则外部人士将无法查看。</span></div>
+            </div>
+        </div>
+    </div>
+    <!--手机简历发布页面二维码弹框-->
+    <div class="modal fade promptModal in" id="preview_qrcode_tips">
+        <div class="modal-dialog">
+            <div class="modal-content clearfix">
+                <div id="preview_qrcode_image" style="text-align: center;"><img class="qrImg" src="http://wubaiding.bj.bcebos.com/upload/image/201708/15/7c773d84-0841-4bac-9228-ae8e1e24fa8a.png" width="196"/></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--简历编辑区域-->
+<div class="wbdCv-container resume mobile">
+    <div class="mobile-head"></div>
+    <div class="wbdCv-baseStyle" id="resume_base" data_color="j1" data_font_name="yahei" data_font_size="14" data_line_height="1" data_font_type="0" resume_sort='{"left":["resume_head","base_info","base_home","base_social","resume_skill","resume_hobby"],"top":[],"right":["resume_name","resume_job_preference","resume_edu","2e2a29e0bb4a7d93f56018bb3ec7de07","4992eae9111d88751c88f2b3c71e62dd","eb3a20eb64c46c13b3646fb3e49d7c30","resume_internship","resume_volunteer","resume_project","resume_honor","resume_summary","resume_recoment","resume_qrcode","7551acb3c21bad41fee6509303e38109","008ff88a6bf4f56a1bcefd3fecfdd8f3","839c3ed4db484a98fb2a6b9fe5388e09","9096088aeea591e1d6f49cc05925a32f","resume_portfolio","4769cde310ffd042b3c84f8fd7a2fdcf","resume_work"],"bottom":[]}' wap_resume_sort='' template_set='{"left":[{"key":"resume_head","isShow":true},{"key":"base_info","isShow":true},{"key":"base_home","isShow":true},{"key":"base_social","isShow":true},{"key":"resume_skill","isShow":true},{"key":"resume_hobby","isShow":true}],"top":[],"right":[{"key":"resume_name","isShow":true},{"key":"resume_job_preference","isShow":true},{"key":"resume_edu","isShow":true},{"key":"resume_work","isShow":true},{"key":"resume_internship","isShow":false},{"key":"resume_volunteer","isShow":false},{"key":"resume_project","isShow":false},{"key":"resume_honor","isShow":false},{"key":"resume_summary","isShow":true},{"key":"resume_portfolio","isShow":false},{"key":"resume_recoment","isShow":false},{"key":"resume_qrcode","isShow":false}],"bottom":[]}' data_itemid="365">
+        <!--封面模块-->
+        <div class="wbdCv-cover hidden" id="resume_cover">
+            <div class="coverItem  moduleItem">
+                <dl>
+                    <dt><div contenteditable="false" data-textLang="cover">封面</div></dt>
+                    <dd>
+                        <div class="cover-con">
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--自荐书模块-->
+        <div class="wbdCv-letter hidden" id="resume_letter">
+            <div class="letterItem moduleItem">
+                <dl>
+                    <dt><div contenteditable="false" data-textLang="letter">自荐信</div></dt>
+                    <dd>
+                        <div contenteditable="true" data-placeholder="在这里添加描述..."></div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="wbdCv-resume clearfix">
+            <div class="wbdCv-baseTop"></div>
+            <div class="wbdCv-baseLeft" id="foo">
+                <!--头像模块-->
+                <div class="headItem moduleItem resume_sort hidden" id="resume_head">
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="wbdfont divIconFont" for-key="resume_head">&#xe880;</a>
+                            <span><div class="item-title module_item_title" contenteditable="false" data-placeholder="头像" data-textLang="head">头像</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="head-con">
+                                <a class="img-preview-hover"> </a>
+                                <div class="img-preview"><img src="http://wubaiding.bj.bcebos.com/upload/image/201708/16/1a8cc007-5340-424a-b605-ebc4d21bfb1d.png"/></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--基本信息模块-->
+                <div class="infoItem bInfoItem moduleItem resume_sort" id="base_info">
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="wbdfont divIconFont" for-key="base_info">&#xe855;</a>
+                            <span><div class="resume_lang module_item_title" for-key="info_title" contenteditable="false" data-placeholder="基本信息" data-placeLang="baseMsg" data-textLang="baseMsg">基本信息</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="info-con">
+                                <!-- 渲染时 从工作年限开始没有内容的 div 添加 hidden 类  身高 & 体重 要加小写单位 -->
+                                <div class="info-sex info-list moduleItemList hidden" id="sex"><a class="wbdfont divIconFont" for-key="sex"></a><span></span></div>
+                                <div class="info-age info-list moduleItemList "   id="birth"><a class="wbdfont divIconFont" for-key="birth"></a><span data-placeLang="age" data-value="1992.2" data-placeholder="生日">25岁</span></div>
+                                <div class="info-nation info-list moduleItemList " id="nation"><a class="wbdfont divIconFont" for-key="nation"></a><span>汉族</span></div>
+                                <div class="info-highedu info-list moduleItemList hidden" id="education"><a class="wbdfont divIconFont" for-key="education"></a><span data-value=""></span></div>
+                                <div class="info-marital info-list moduleItemList hidden" id="marriageStatus"><a class="wbdfont divIconFont" for-key="marriageStatus"></a><span data-value=""></span></div>
+                                <div class="info-height info-list moduleItemList hidden" id="height"><a class="wbdfont divIconFont" for-key="height"></a><span data-value="">cm</span></div>
+                                <div class="info-status info-list moduleItemList hidden" id="politicalStatus"><a class="wbdfont divIconFont" for-key="politicalStatus"></a><span data-value=""></span></div>
+                                <div class="info-city info-list moduleItemList "  id="city"><a class="wbdfont divIconFont" for-key="city"></a><span data-placeLang="city" data-value="927" data-placeholder="所在城市">浙江杭州</span></div>
+                                <div class="info-work info-list moduleItemList hidden" id="jobYear"><a class="wbdfont divIconFont" for-key="jobYear"></a><span data-value=""></span></div>
+                                <div class="info-phone info-list moduleItemList " id="mobile"><a class="wbdfont divIconFont" for-key="mobile"></a><span data-placeLang="phone" data-placeholder="联系电话">17605887661</span></div>
+                                <div class="info-email info-list moduleItemList " id="email"><a class="wbdfont divIconFont" for-key="email"></a><span data-placeLang="email" data-placeholder="电子邮箱">zhanglijianwork@163.com</span></div>
+                                <div class="info-weight info-list moduleItemList hidden" id="weight"><a class="wbdfont divIconFont" for-key="weight"></a><span data-value="">kg</span></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--个人主页模块-->
+                <div class="homeItem bInfoItem moduleItem resume_sort hidden" id="base_home">
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="wbdfont divIconFont" for-key="base_home">&#xf192;</a>
+                            <span><div class="resume_lang module_item_title" for-key="base_home" contenteditable="false" data-placeholder="个人主页" data-placeLang="homePage" data-textLang="homePage">个人主页</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="home-con">
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--社交账号模块-->
+                <div class="socialItem bInfoItem moduleItem resume_sort hidden" id="base_social">
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="wbdfont divIconFont" for-key="base_social">&#xe64b;</a>
+                            <span><div class="resume_lang module_item_title" for-key="base_social" contenteditable="false" data-placeholder="社交账号" data-placeLang="social" data-textLang="social">社交账号</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="social-con">
+                                <div class="social-wx social-list moduleItemList hidden"><a class="hvr-buzz" href="javascript:;" data-title="微信"></a><span>微信</span></div>
+                                <div class="social-qq social-list moduleItemList hidden"><a class="hvr-buzz" href="javascript:;" data-title="QQ"></a><span>QQ</span></div>
+                                <div class="social-zh social-list moduleItemList hidden"><a class="hvr-buzz" href="#" title="知乎"></a><span>知乎</span></div>
+                                <div class="social-wb social-list moduleItemList hidden"><a class="hvr-buzz" href="#" title="微博"></a><span>微博</span></div>
+                                <div class="social-dd social-list moduleItemList hidden"><a class="hvr-buzz" href="javascript:;" data-title="钉钉号"></a><span>钉钉号</span></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--技能特长模块-->
+                <div class="skillItem baseItem moduleItem resume_sort " id="resume_skill">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_skill"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_skill" contenteditable="false" data-placeholder="技能特长" data-placeLang="social" data-textLang="social">技能特长</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="skill-con">
+                                <div class="baseItem-null" style="display:none;"><div class="baseItem-nullcon"><i>+</i><span data-textLang="addSkills">添加我的技能特长</span></div></div>
+                                <div class="skill-list moduleItemList" data-id="87794">
+                                    <span class="skill-title item_title">              Photoshop              </span>
+                                    <span class="skill-slider item_level" data_level="advanced"><s><i data-skill-width="1"></i></s><span>熟练</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87795">
+                                    <span class="skill-title item_title">              vue              </span>
+                                    <span class="skill-slider item_level" data_level="good"><s><i data-skill-width="1"></i></s><span>良好</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87796">
+                                    <span class="skill-title item_title">          webpack/gulp          </span>
+                                    <span class="skill-slider item_level" data_level="good"><s><i data-skill-width="1"></i></s><span>良好</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87797">
+                                    <span class="skill-title item_title">          sql server          </span>
+                                    <span class="skill-slider item_level" data_level="advanced"><s><i data-skill-width="1"></i></s><span>熟练</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87798">
+                                    <span class="skill-title item_title">        require.js/r.js        </span>
+                                    <span class="skill-slider item_level" data_level="good"><s><i data-skill-width="1"></i></s><span>良好</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87799">
+                                    <span class="skill-title item_title">       git/npm/node.js       </span>
+                                    <span class="skill-slider item_level" data_level="good"><s><i data-skill-width="1"></i></s><span>良好</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87800">
+                                    <span class="skill-title item_title">   html/css/css3/js/   </span>
+                                    <span class="skill-slider item_level" data_level="advanced"><s><i data-skill-width="1"></i></s><span>熟练</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87801">
+                                    <span class="skill-title item_title">   jquery   </span>
+                                    <span class="skill-slider item_level" data_level="advanced"><s><i data-skill-width="1"></i></s><span>熟练</span></span>
+                                </div>
+                                <div class="skill-list moduleItemList" data-id="87802">
+                                    <span class="skill-title item_title">   bootstrap   </span>
+                                    <span class="skill-slider item_level" data_level="advanced"><s><i data-skill-width="1"></i></s><span>熟练</span></span>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--兴趣爱好模块-->
+                <div class="hobbyItem baseItem moduleItem resume_sort hidden"  id="resume_hobby">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_hobby"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_hobby" contenteditable="false" data-placeholder="兴趣爱好" data-placeLang="hobby" data-textLang="hobby">兴趣爱好</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="hobby-con">
+                                <div class="baseItem-null" style="display:none;"><div class="baseItem-nullcon"><i>+</i><span data-textLang="addHobby">添加我的兴趣爱好</span></div></div>
+                                <div class="hobby-list moduleItemList" data-id="" id="8cae972c9712e30282a410df251b1950">
+                                    <a class="wbdfont divIconFont" for-key="8cae972c9712e30282a410df251b1950"></a>
+                                    <span class="hobby-title item_title">阅读</span>
+                                </div>
+                                <div class="hobby-list moduleItemList" data-id="" id="3df9ded596a38db887f491dadb7cdd3b">
+                                    <a class="wbdfont divIconFont" for-key="3df9ded596a38db887f491dadb7cdd3b"></a>
+                                    <span class="hobby-title item_title"> 户外</span>
+                                </div>
+                                <div class="hobby-list moduleItemList" data-id="" id="0b0130acbb5ba0cc8e95e13b65cdb351">
+                                    <a class="wbdfont divIconFont" for-key="0b0130acbb5ba0cc8e95e13b65cdb351"></a>
+                                    <span class="hobby-title item_title">游戏</span>
+                                </div>
+                                <div class="hobby-list moduleItemList" data-id="" id="f6130d52e5d6da4940fdf77c53d18c18">
+                                    <a class="wbdfont divIconFont" for-key="f6130d52e5d6da4940fdf77c53d18c18"></a>
+                                    <span class="hobby-title item_title"> 音乐</span>
+                                </div>
+                                <div class="hobby-list moduleItemList" data-id="" id="4e2652a1ea229c4bf857fa7825013938">
+                                    <a class="wbdfont divIconFont" for-key="4e2652a1ea229c4bf857fa7825013938"></a>
+                                    <span class="hobby-title item_title">足球</span>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--添加自定义模块-->
+                <div class="baseItem-null addCustomItem"><div class="baseItem-nullcon"><i>+</i><span data-textLang="custom">添加自定义模块</span></div></div>
+            </div>
+            <div class="wbdCv-baseRight" id="bar">
+                <!--姓名一句话模块-->
+                <div class="nameItem bInfoItem resume_sort" id="resume_name">
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="wbdfont divIconFont" for-key="resume_name">&#xe8af;</a>
+                            <span><div class="item-title module_item_title" contenteditable="false" data-placeholder="姓名">姓名</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="name-con">
+                                <div class="name resume_lang" for-key="name" contenteditable="false" data-placeholder="你的名字" data-placeLang="name">张小帅</div>
+                                <div class="word resume_lang" for-key="word" contenteditable="false" data-placeholder="一句话介绍自己，告诉HR为什么选择你而不是别人" data-placeLang="word">天道酬勤</div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--求职意向模块-->
+                <div class="inteItem baseItem moduleItem resume_sort "  id="resume_job_preference">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_job_preference"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_job_preference" contenteditable="false" data-placeholder="求职意向" data-placeLang="job" data-textLang="job">求职意向</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="inte-con">
+                                <div class="inte-job inte-list moduleItemList " id="jobFunction"><a class="wbdfont divIconFont" for-key="jobFunction"></a><span data-placeholder="意向岗位" data-placeLang="jobFun">前端开发工程师</span></div>
+                                <div class="inte-type inte-list moduleItemList " id="jobType"><a class="wbdfont divIconFont" for-key="jobType"></a><span data-value="fullTime" data-placeholder="职业类型" data-placeLang="jobType">全职</span></div>
+                                <div class="inte-city inte-list moduleItemList " id="jobCity"><a class="wbdfont divIconFont" for-key="jobCity"></a><span data-placeholder="意向城市" data-value="927" data-placeLang="jobCity">浙江杭州</span></div>
+                                <div class="inte-price inte-list moduleItemList " id="jobSalary"><a class="wbdfont divIconFont" for-key="jobSalary"></a><span data-placeholder="薪资要求" data-placeLang="jobSalary">7K-9K</span></div>
+                                <div class="inte-time inte-list moduleItemList " id="jobTime"><a class="wbdfont divIconFont" for-key="jobTime"></a><span data-value="immediately" data-placeholder="入职时间" data-placeLang="jobTime">随时到岗</span></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--教育背景模块-->
+                <div class="eduItem baseItem timeItem moduleItem resume_sort " id="resume_edu">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_edu"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_edu" contenteditable="false" data-placeholder="教育背景" data-placeLang="edu" data-textLang="edu">教育背景</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList" data-id="11962">
+                                <div class="dd-title clearfix ">
+                                    <span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start">2012.9</i>-<i class="time-end">2016.7</i></div></span>
+                                    <span class="company"><div contenteditable="true" data-placeholder="填写学校名称..." data-placeLang="school">华东交通大学</div></span>
+                                    <span class="post"><div contenteditable="true" data-placeholder="填写专业名称..." data-placeLang="major">信息管理与信息系统</div></span>
+                                </div>
+                                <div class="dd-text clearfix  ">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里详细描述你在校期间所学的专业，主要包括课程内容，校内任职，校内荣誉等内容..." data-placeLang="description">专业：（信息管理与信息系统 一本）<div>&nbsp;课程：c++，网站开发，数据库，java，算法</div></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--工作经历模块-->
+                <div class="experItem baseItem timeItem moduleItem resume_sort " id="resume_work">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_work"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_work" contenteditable="false" data-placeholder="工作经验" data-placeLang="exper" data-textLang="exper">工作经验</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList" data-id="14514">
+                                <div class="dd-title clearfix ">
+                                    <span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start">2016.8</i>-<i class="time-end">2017.9</i></div></span>
+                                    <span class="company"><div contenteditable="true" data-placeholder="填写公司名称..." data-placeLang="organization">杭州草尚电子商务公司</div></span>
+                                    <span class="post"><div contenteditable="true" data-placeholder="填写职位名称..." data-placeLang="JobTitle">信息专员</div></span>
+                                </div>
+                                <div class="dd-text clearfix ">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里详细描述你的职责范围、工作任务以及取得的成绩等..." data-placeLang="description"><p>工作内容：</p><p></p><ul><li>负责公司系统（erp,oa，会员等）和硬件的维护；<br></li><li>系统使用培训；<br></li><li>&nbsp;报表制作，使用sqlsever；</li></ul><p></p></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--实习经历模块-->
+                <div class="intexperItem baseItem timeItem moduleItem resume_sort hidden" id="resume_internship">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_internship"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_internship" contenteditable="false" data-placeholder="实习经历" data-placeLang="intexper" data-textLang="intexper">实习经验</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList" data-id="">
+                                <div class="dd-title clearfix ">
+                                    <span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"><i class="time-start" >2009.03</i>-<i class="time-end">2011.06</i></div></span>
+                                    <span class="company"><div contenteditable="true" data-placeholder="填写公司名称..." data-placeLang="organization"><b>五百丁大学职业发展社</b></div></span>
+                                    <span class="post"><div contenteditable="true" data-placeholder="填写职位名称..." data-placeLang="JobTitle"><b>社长</b></div></span>
+                                </div>
+                                <div class="dd-text clearfix ">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加实习描述..." data-placeLang="description"><p></p><div>内容描述：</div><div><ul><li>负责社团组织建设，社团机构的管理，协调各部门工作；&nbsp;<br></li><li>策划社团的成立大会、竞选会、团队培训、招新等运维活动；&nbsp;<br></li><li>定期组织对外活动，主要邀请师兄和社会成功人士参加公享会，让更多的同学了解职业发展前途。<br></li></ul></div><p></p></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--志愿者经历模块-->
+                <div class="volexperItem baseItem timeItem moduleItem resume_sort hidden" id="resume_volunteer">
+                    <dl>
+                        <dt class="clearfix hidden">
+                            <a class="wbdfont divIconFont" for-key="resume_volunteer"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_volunteer" contenteditable="false" data-placeholder="志愿者经历" data-placeLang="volexper" data-textLang="volexper"></div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-title clearfix">
+                                    <span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"></div></span>
+                                    <span class="company"><div contenteditable="true" data-placeholder="填写单位信息..." data-placeLang="organization"></div></span>
+                                    <span class="post"><div contenteditable="true" data-placeholder="填写角色名称..." data-placeLang="JobTitle"></div></span>
+                                </div>
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加描述..." data-placeLang="description"></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--项目经验模块-->
+                <div class="proexperItem baseItem timeItem moduleItem resume_sort hidden" id="resume_project">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_project"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_project" contenteditable="false" data-placeholder="项目经验" data-placeLang="proexper" data-textLang="proexper">项目经验</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-title clearfix">
+                                    <span class="time"><div contenteditable="false" data-placeholder="设置时间..." data-placeLang="time"></div></span>
+                                    <span class="company"><div contenteditable="true" data-placeholder="填写项目名称..." data-placeLang="organization"></div></span>
+                                    <span class="post"><div contenteditable="true" data-placeholder="填写角色名称..." data-placeLang="JobTitle"></div></span>
+                                </div>
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="exper_content" data-placeholder="在这里添加描述..." data-placeLang="description"></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--荣誉奖项模块-->
+                <div class="honorItem baseItem moduleItem descItem resume_sort hidden" id="resume_honor">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_honor"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_honor" contenteditable="false" data-placeholder="荣誉奖项" data-placeLang="honor" data-textLang="honor">荣誉奖项</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="honor_content" data-placeholder="在这里详细描述你所获得的奖项荣耀..." data-placeLang="description"><p><span style="letter-spacing: 0.1px; line-height: 1.5;">2010.04 获得“优秀团员”</span><br></p><p>2010.11  获得国家励志奖学金<br></p><p>2012.05  获得“三好学生”<br></p><p>2013.11  获研究生一等奖学金<br></p><p>2014.11  获研究生三等奖学金<br></p><p>2015.06  360前端星培训证书<br></p><p><br></p></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--自我评价模块-->
+                <div class="evalItem baseItem moduleItem descItem resume_sort hidden" id="resume_summary">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_summary"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_summary" contenteditable="false" data-placeholder="自我评价" data-placeLang="self" data-textLang="self">自我评价</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="summary_content" data-placeholder="在这里对你的履历进行简短的总结和评价..." data-placeLang="description"><div><br></div></div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--作品展示模块-->
+                <div class="workItem baseItem moduleItem resume_sort " id="resume_portfolio">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_portfolio"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_portfolio" data-placeholder="作品展示" data-placeLang="portfolio" data-textLang="portfolio">效果展示</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="work-con">
+                                <div class="baseItem-null" style="display: none;"><div class="baseItem-nullcon"><i>+</i><span data-textLang="addPortfolio">添加我的作品</span></div></div>
+                                <div class="work-con-img clearfix">
+                                    <div class="work-list moduleItemList">
+											<span class="work-img">
+												<div class="work-img-inner">
+                                                    <div class="img-preview" style="width: inherit;height:inherit;">
+                                                        <img src="http://wubaiding.bj.bcebos.com/upload/image/201708/23/b05b0079-b778-4409-94cf-d703ee11c475.png">
+                                                    </div>
+                                                    <div class="span-hover"></div>
+                                                </div>
+											</span>
+                                        <span class="work-title">vue在线简历</span>
+                                        <span class="work-text"></span>
+                                        <a class="delete"></a>
+                                        <a class="work-edit"></a>
+                                    </div>
+                                    <div class="work-list moduleItemList">
+											<span class="work-img">
+												<div class="work-img-inner">
+                                                    <div class="img-preview" style="width: inherit;height:inherit;">
+                                                        <img src="http://wubaiding.bj.bcebos.com/upload/image/201708/23/f0d83b8a-783d-426d-9d17-c88d1bbe2ea6.png">
+                                                    </div>
+                                                    <div class="span-hover"></div>
+                                                </div>
+											</span>
+                                        <span class="work-title">企业级页面</span>
+                                        <span class="work-text"></span>
+                                        <a class="delete"></a>
+                                        <a class="work-edit"></a>
+                                    </div>
+                                    <div class="work-list moduleItemList">
+											<span class="work-img">
+												<div class="work-img-inner">
+                                                    <div class="img-preview" style="width: inherit;height:inherit;">
+                                                        <img src="http://wubaiding.bj.bcebos.com/upload/image/201708/23/b15c9672-61ef-40b7-a40a-0962f42d110b.png">
+                                                    </div>
+                                                    <div class="span-hover"></div>
+                                                </div>
+											</span>
+                                        <span class="work-title">新闻懒加载瀑布流布局</span>
+                                        <span class="work-text"></span>
+                                        <a class="delete"></a>
+                                        <a class="work-edit"></a>
+                                    </div>
+                                    <div class="work-list moduleItemList">
+											<span class="work-img">
+												<div class="work-img-inner">
+                                                    <div class="img-preview" style="width: inherit;height:inherit;">
+                                                        <img src="http://wubaiding.bj.bcebos.com/upload/image/201708/23/2a3d7b8d-d8b5-4e00-886e-fbe191f3a473.png">
+                                                    </div>
+                                                    <div class="span-hover"></div>
+                                                </div>
+											</span>
+                                        <span class="work-title">木桶布局照片墙</span>
+                                        <span class="work-text"></span>
+                                        <a class="delete"></a>
+                                        <a class="work-edit"></a>
+                                    </div>
+                                    <div class="work-list moduleItemList">
+											<span class="work-img">
+												<div class="work-img-inner">
+                                                    <div class="img-preview" style="width: inherit;height:inherit;">
+                                                        <img src="http://wubaiding.bj.bcebos.com/upload/image/201708/23/24c67495-1354-4b21-9fb6-70064b8560af.png">
+                                                    </div>
+                                                    <div class="span-hover"></div>
+                                                </div>
+											</span>
+                                        <span class="work-title">天气预报web</span>
+                                        <span class="work-text"></span>
+                                        <a class="delete"></a>
+                                        <a class="work-edit"></a>
+                                    </div>
+                                    <div class="work-list moduleItemList">
+											<span class="work-img">
+												<div class="work-img-inner">
+                                                    <div class="img-preview" style="width: inherit;height:inherit;">
+                                                        <img src="http://wubaiding.bj.bcebos.com/upload/image/201708/23/d92f7e25-5714-489c-b057-9862317a3319.png">
+                                                    </div>
+                                                    <div class="span-hover"></div>
+                                                </div>
+											</span>
+                                        <span class="work-title">天气预报npm 包</span>
+                                        <span class="work-text"></span>
+                                        <a class="delete"></a>
+                                        <a class="work-edit"></a>
+                                    </div>
+                                </div>
+                                <div class="work-con-link clearfix">
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--推荐信模块-->
+                <div class="recomentItem baseItem moduleItem resume_sort hidden" id="resume_recoment">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="resume_recoment"></a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_recoment" data-placeholder="推荐信" data-placeLang="recoment" data-textLang="recoment">推荐信</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="recoment-con">
+                                <div class="baseItem-null" style="display:block;"><div class="baseItem-nullcon"><i>+</i><a target="_blank" data-textLang="requestRecomment">邀请别人为你写推荐信</a></div></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--手机二维码模块-->
+                <div class="ewmItem baseItem moduleItem resume_sort hidden" id="resume_qrcode">
+                    <dl>
+                        <dt class="clearfix">
+                            <a class="wbdfont divIconFont" for-key="resume_qrcode">&#xe8dd;</a>
+                            <span><div class="resume_lang module_item_title" for-key="resume_qrcode" data-placeholder="二维码" data-placeLang="code" data-textLang="code">二维码</div></span>
+                        </dt>
+                        <dd class="clearfix moduleItemList">
+                            <div class="ewm-con">
+                                <span><img class="qrImg" src="http://wubaiding.bj.bcebos.com/upload/image/201708/15/7c773d84-0841-4bac-9228-ae8e1e24fa8a.png" width="196"/></span>
+                                <div class="resume_content" contenteditable="true" data-placeholder="感谢您的阅读，扫一扫查看我的手机简历" data-placeLang="ewm" data-textLang="ewm">感谢您的阅读，扫一扫查看我的手机简历</div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!--添加自定义模块-->
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="2e2a29e0bb4a7d93f56018bb3ec7de07">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="2e2a29e0bb4a7d93f56018bb3ec7de07"></a>
+                            <span><div class="resume_lang module_item_title" for-key="2e2a29e0bb4a7d93f56018bb3ec7de07">项目介绍</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="2e2a29e0bb4a7d93f56018bb3ec7de07" data-placeholder="在这里详细描述你的奖项荣耀..."></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="4992eae9111d88751c88f2b3c71e62dd">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="4992eae9111d88751c88f2b3c71e62dd"></a>
+                            <span><div class="resume_lang module_item_title" for-key="4992eae9111d88751c88f2b3c71e62dd">vue分析系统</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="4992eae9111d88751c88f2b3c71e62dd" data-placeholder="在这里详细描述你的奖项荣耀...">功能介绍：填入样例（从样例接口获取数据）或者上传文件（从Excel文档上解析）获得原始数据，开始分析从后台获取标注和最终结果表格数据，展示数据,数据加载过程loading动画<div>技术细节：vue.js，brat.js（在指定标签内画svg），xlsx（npm包）解析excel文档，vue-router实现跳转，localstorage实现存储读取数据，element.ui实现部分样式，css3实现loading动画 ，fetch请求数据，后端java</div><div>技术栈：vue.js，brat.js,xlsx,vue-router,css3</div><div>预览地址：本地</div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="eb3a20eb64c46c13b3646fb3e49d7c30">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="eb3a20eb64c46c13b3646fb3e49d7c30"></a>
+                            <span><div class="resume_lang module_item_title" for-key="eb3a20eb64c46c13b3646fb3e49d7c30">vue在线简历</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="eb3a20eb64c46c13b3646fb3e49d7c30" data-placeholder="在这里详细描述你的奖项荣耀..."><div><br></div>功能介绍：编辑、预览、注册、登录、登出、存取当前登录用户的数据&nbsp;<div><div>技术细节：flex布局、element.ui更改样式、vue-cli搭建打包模块、<span style="background-color: inherit;">&nbsp;</span></div><div>技术栈 &nbsp; &nbsp;: vue.js/es6</div><div>预览地址:https://huoguozhang.github.io/vue-resume/a/dist/</div><div>源 &nbsp; &nbsp; &nbsp; 码:https://github.com/huoguozhang/vue-resume/tree/master/a<br><div><div></div></div></div></div><div><br></div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="7551acb3c21bad41fee6509303e38109">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="7551acb3c21bad41fee6509303e38109"></a>
+                            <span><div class="resume_lang module_item_title" for-key="7551acb3c21bad41fee6509303e38109">企业轮播官网</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="7551acb3c21bad41fee6509303e38109" data-placeholder="在这里详细描述你的奖项荣耀..."><div>功能介绍：全屏轮播，回到顶部，懒加载，瀑布流布局某板块，纯css布局</div><div>技术细节:jquery封装组件，require.js加载模块，gulp和webpack(两种方式打包)</div>预览地址:https://huoguozhang.github.io/webpacktest/webpack-1526/webpack-15/<div>源码地址 https://github.com/huoguozhang/webpacktest/tree/master/webpack-1526/webpack-15</div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="008ff88a6bf4f56a1bcefd3fecfdd8f3">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="008ff88a6bf4f56a1bcefd3fecfdd8f3"></a>
+                            <span><div class="resume_lang module_item_title" for-key="008ff88a6bf4f56a1bcefd3fecfdd8f3">新闻懒加载</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="008ff88a6bf4f56a1bcefd3fecfdd8f3" data-placeholder="在这里详细描述你的奖项荣耀..."><div>功能介绍：滚动条下滚动一定符合条件的距离时，自动加载新的新闻页</div><div>技术细节：jsonp的方式获取新闻数据，瀑布流布局，jquery计算并记录每一列的高度和</div><div>预览地址：https://huoguozhang.github.io/lazyloadnews/</div><div>源码地址：https://github.com/huoguozhang/lazyloadnews</div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="839c3ed4db484a98fb2a6b9fe5388e09">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="839c3ed4db484a98fb2a6b9fe5388e09"></a>
+                            <span><div class="resume_lang module_item_title" for-key="839c3ed4db484a98fb2a6b9fe5388e09">木桶布局照片墙</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="839c3ed4db484a98fb2a6b9fe5388e09" data-placeholder="在这里详细描述你的奖项荣耀..."><div>功能介绍：将随机大小的图片和新闻图片，在让图片不变形的情况下，让一行的图片高度相等，展示在页面上</div><div>技术细节：ajax获取在线图片，jquery设置图片高度，生成随机大小的图片，组件封装</div><div>遇到的难点：两个接口的图片服务器不一样，sina的会比获取随机大小图片的接口更快摆放在页面并不会相间排列，第二：应该先等该图片加载完成，再摆放计算高度</div><div>预览地址:https://huoguozhang.github.io/CaskLayout/index.html<div>源码地址:https://github.com/huoguozhang/CaskLayout</div></div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="9096088aeea591e1d6f49cc05925a32f">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="9096088aeea591e1d6f49cc05925a32f"></a>
+                            <span><div class="resume_lang module_item_title" for-key="9096088aeea591e1d6f49cc05925a32f">天气预报</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="9096088aeea591e1d6f49cc05925a32f" data-placeholder="在这里详细描述你的奖项荣耀..."><div>方式一：</div><div>功能介绍：可以获取未来三天某个城市的天气预报，某认杭州，可以选择其他市，字体图标显示天气状态，鼠标悬停有特殊样式</div><div>技术细节：ajax,字体图标，jquery操作dom、css</div>预览地址：(https://huoguozhang.github.io/weather/)<div>源码地址：（https://github.com/huoguozhang/weather）</div><div>方式二：</div><div>功能介绍：npm包</div><div>npm 包，在git.bash输入 npm install --save zljtianqi或者全局安装</div><div>运行 输入weather即可得到杭州市的天气，或输入weather &nbsp; &nbsp;城市名</div><div>得到相关城市的天气</div><div>技术细节：node.js 、webpack&nbsp;</div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem moduleItem resume_sort customItem descItem" id="4769cde310ffd042b3c84f8fd7a2fdcf">
+                    <dl>
+                        <dt class="clearfix ">
+                            <a class="wbdfont divIconFont" for-key="4769cde310ffd042b3c84f8fd7a2fdcf"></a>
+                            <span><div class="resume_lang module_item_title" for-key="4769cde310ffd042b3c84f8fd7a2fdcf">技能概括</div></span>
+                        </dt>
+                        <dd class="clearfix">
+                            <div class="dd-content moduleItemList">
+                                <div class="dd-text clearfix">
+                                    <div class="resume_lang resume_content" contenteditable="true" for-key="4769cde310ffd042b3c84f8fd7a2fdcf" data-placeholder="在这里详细描述你的奖项荣耀...">1、html/css &nbsp; : &nbsp;浏览器兼容、常见布局、linux命令行、html5、css3等<div>2、js、ajax、跨域、jquery 实现动态效果 &nbsp;、面向对象、组件封装、es6</div><div>3、框架和工具：boostrap requirejs npm nodejs gulp less svg vue &nbsp;webpack &nbsp; &nbsp;（熟悉程度：可以独立完成）</div><div>4、其他技术：photoshop（抠图，切图） &nbsp; &nbsp; &nbsp; sqlsever（存储过程）</div><div><br></div></div>
+                                </div>
+                            </div>
+                    </dl>
+                </div>
+                <div class="baseItem-null addCustomItem"><div class="baseItem-nullcon"><i>+</i><span data-textLang="custom">添加自定义模块</span></div></div>
+            </div>
+            <div class="wbdCv-baseBottom"></div>
+        </div>
+    </div>
+    <script>
+        if(typeof cvresume != "undefined"){
+            cvresume.main.resume_draw(365,2668742,0,'4150704205');
+            cvresume.main.set_language("zh");
+            cvresume.info.resumecontentid=0;//内容简历模板id
+            cvresume.main.resume_sort({"left":["resume_head","base_info","base_home","base_social","resume_skill","resume_hobby"],"top":[],"right":["resume_name","resume_job_preference","resume_edu","2e2a29e0bb4a7d93f56018bb3ec7de07","4992eae9111d88751c88f2b3c71e62dd","eb3a20eb64c46c13b3646fb3e49d7c30","resume_internship","resume_volunteer","resume_project","resume_honor","resume_summary","resume_recoment","resume_qrcode","7551acb3c21bad41fee6509303e38109","008ff88a6bf4f56a1bcefd3fecfdd8f3","839c3ed4db484a98fb2a6b9fe5388e09","9096088aeea591e1d6f49cc05925a32f","resume_portfolio","4769cde310ffd042b3c84f8fd7a2fdcf","resume_work"],"bottom":[]});
+        }
+    </script>
+
+</div>
+<!--联系我模块-->
+<div class="contactItem " id="resume_contact">
+    <dl>
+        <dt class="clearfix ">
+            <span><div class="resume_lang module_item_title" for-key="resume_contact" data-placeholder="联系我" data-textLang="contact" data-placeLang="contact">联系我</div></span>
+        </dt>
+        <dd class="clearfix">
+            <div class="contact-con">
+                <div class="disc resume_contact_desc" contenteditable="true" data-placeholder-tips="在这里留言，我将尽快联系你。" data-textLang="contactTip" data-placeLang="contactTip"></div>
+                <div class="contact-main">
+                    <div class="name resume_contact_name" contenteditable="true" data-placeholder="姓名" data-textLang="contactName" data-placeLang="contactName"></div>
+                    <div class="phone resume_contact_mobile" contenteditable="true" data-placeholder="电话" data-textLang="contactEmail" data-placeLang="contactEmail"></div>
+                    <div class="text resume_contact_content" contenteditable="true" data-placeholder-tips="留言内容。"  data-textLang="contactMsg" data-placeLang="contactMsg"></div>
+                    <button class="btn" data-textLang="send">发送</button>
+                </div>
+            </div>
+        </dd>
+    </dl>
+</div>
+<script>
+    $(function(){
+        $("#resume_contact .btn").click(function(){
+            cvresume.main.contact_me(2668742);
+        });
+        $("div[data-placeholder-tips]").each(function(index,ele){
+            var curhtml=$(ele).html();
+            if(cvresume.main.is_empty(curhtml)){
+                $(ele).html($(ele).attr("data-placeholder-tips"));
+            }
+        })
+        $(document).on("focus","div[data-placeholder-tips]",function(){
+            var curhtml=$(this).html();
+            if($(this).attr("data-placeholder-tips")==curhtml){
+                $(this).html("");
+            }
+        })
+        $(document).on("blur","div[data-placeholder-tips]",function(){
+            var curhtml=$(this).html();
+            if(cvresume.main.is_empty(curhtml)){
+                $(this).html($(this).attr("data-placeholder-tips"));
+            }
+        })
+    });
+</script>
+
+<script>
+    $(function(){
+        cvresume.main.resume_release_pageInit();
+        common.main.repairResumeLeftHeight();
+        var param=location.search;
+        if(param!=""){
+            $.get("/resumeCoverLetter/resume_email_track/4150704205/"+location.search+"&replyType=hrReaded");
+        }
+        $("#releaseResume .close").on('click', function () {
+            $("#releaseResume").hide();
+            addCookie("closeRelease","true");
+        });
+        if(cvresume.main.is_empty(getCookie("closeRelease"))){
+            $("#releaseResume").show();
+        }else{
+            $("releaseResume").hide()
+        }
+        if(common.main.getUrlParamsValue("device") == "wap"){
+            $(".share [data-target='#shareResume-modal']").attr("data-target","#preview_qrcode_tips");
+            $("#preview_qrcode_tips").on('click',function(){
+                $("#preview_qrcode_tips").modal("hide");
+            })
+        }
+        common.main.init_authority_lock();
+        //简历查看数据上报、使用localStorage轻量提高上报成本
+        if (window.localStorage) {
+            if(common.main.is_empty(localStorage.getItem("hrIsWatch")) || localStorage.getItem("hrIsWatch") != 2668742){
+                common.main.resumeOperationLogUpload(2668742,"watch","游客","");//导入简历日志上报
+                localStorage.setItem("hrIsWatch",2668742);
+            }
+        } else {
+            console.log("浏览器版本太低，无法使用localStorage");
+        }
+    });
+</script>
+</body>
+</html>
